@@ -26,6 +26,7 @@
   const $ = id => document.getElementById(id);
   const date = $('date'), section = $('section'), status = $('status'), items = $('items'), updated = $('updated');
   let current = [];
+  let dateRequest = 0;
   const safeText = value => String(value ?? '');
   const stamp = value => value ? new Date(value).toLocaleString('zh-CN', {timeZone:'Asia/Shanghai', hour12:false}) : '未提供';
   function message(text, kind='') { status.hidden = false; status.textContent = text; status.dataset.kind = kind; }
@@ -47,10 +48,11 @@
   }
   function setSections() { const selected=section.value; const values=[...new Set(current.map(item=>item.section).filter(Boolean))]; section.replaceChildren(new Option('全部','all')); values.forEach(value=>section.add(new Option(value,value))); section.value=values.includes(selected)?selected:'all'; section.disabled=false; }
   async function loadDate() {
+    const request = ++dateRequest;
     if (!date.value) { current=[]; setSections(); render(); updated.textContent=''; clearMessage(); return; }
     message('正在读取该日期的公开短摘要…');
-    try { const response=await fetch(`./data/${encodeURIComponent(date.value)}.json`,{cache:'no-store'}); if(!response.ok) throw new Error(`HTTP ${response.status}`); const payload=await response.json(); if(payload.schemaVersion!==1 || payload.date!==date.value || !Array.isArray(payload.items)) throw new Error('数据格式不符合公开 schema'); current=payload.items; setSections(); render(); updated.textContent=`数据更新时间：${stamp(payload.updatedAt)}（Asia/Shanghai）`; clearMessage(); }
-    catch (error) { current=[]; setSections(); render(); message(`读取失败：${error.message}。请稍后手动刷新。`,'error'); }
+    try { const response=await fetch(`./data/${encodeURIComponent(date.value)}.json`,{cache:'no-store'}); if(!response.ok) throw new Error(`HTTP ${response.status}`); const payload=await response.json(); if(request!==dateRequest)return; if(payload.schemaVersion!==1 || payload.date!==date.value || !Array.isArray(payload.items)) throw new Error('数据格式不符合公开 schema'); current=payload.items; setSections(); render(); updated.textContent=`数据更新时间：${stamp(payload.updatedAt)}（Asia/Shanghai）`; clearMessage(); }
+    catch (error) { if(request!==dateRequest)return; current=[]; setSections(); render(); updated.textContent=''; message(`读取失败：${error.message}。请稍后手动刷新。`,'error'); }
   }
   async function loadIndex() {
     date.disabled=true; section.disabled=true; message('正在读取公开新闻索引…');
