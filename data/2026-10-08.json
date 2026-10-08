@@ -1,19 +1,15 @@
-{
-  "schemaVersion": 1,
-  "date": "2026-10-08",
-  "updatedAt": "2026-10-08T12:14:00+08:00",
-  "items": [
-    {
-      "id": "fomc-minutes-2026-09-15-16",
-      "section": "宏观市场",
-      "title": "美联储发布 9 月会议纪要",
-      "summary": "美联储于 10 月 7 日发布 9 月 15–16 日 FOMC 会议纪要；该条仅确认纪要已发布，具体政策解读须回到原文核对。",
-      "eventTime": "2026-10-07 14:00 ET（官方发布）",
-      "updatedAt": "2026-10-08T12:14:00+08:00",
-      "source": {
-        "name": "Federal Reserve",
-        "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm"
-      }
-    }
-  ]
-}
+{"schemaVersion":1,"date":"2026-10-08","updatedAt":"2026-10-08T12:30:00+08:00","items":[
+{"id":"fomc-minutes","section":"宏观市场","title":"美联储公布9月会议纪要","summary":"美联储官方会议页确认，9月15–16日 FOMC 会议纪要于10月7日发布；具体政策解读须回到原文核对。","eventTime":"2026-10-07 14:00 ET（官方发布）","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"Federal Reserve","url":"https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm"}},
+{"id":"us-inflation-expectations","section":"宏观市场","title":"美国一年期通胀预期升至3.9%","summary":"据 CNBC 报道，其引用的消费者预期调查显示未来12个月通胀预期中位数为3.9%。","eventTime":"2026-10-07","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"CNBC","url":"https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html"}},
+{"id":"hang-seng-tech-reform","section":"中国经济","title":"恒生科技指数拟于12月扩容至50只","summary":"据财新报道，指数编算方法改革计划于12月7日落实，成分股拟由30只增至50只。","eventTime":"2026-10-08 11:27","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"财新","url":"https://finance.caixin.com/2026-10-08/102491092.html"}},
+{"id":"china-28day-bill","section":"中国经济","title":"财政部发行200亿元28天期债券","summary":"据华尔街见闻转述，发行利率0.8479%，边际利率0.9001%，投标倍数3.31倍。","eventTime":"2026-10-08 11:44","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"华尔街见闻","url":"https://wallstreetcn.com/livenews/3175160"}},
+{"id":"shanghai-offshore-bonds","section":"中国经济","title":"上海已发行22单自贸离岸债","summary":"据经济观察网转述人民银行上海总部信息，试点以来发行规模约86亿元。","eventTime":"2026-10-08 11:52","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"经济观察网","url":"https://www.eeo.com.cn/2026/1008/1057345.shtml"}},
+{"id":"ccc-lighting","section":"中国政策","title":"灯具和镇流器CCC规则更新","summary":"据36氪转述，市场监管总局发布相关实施规则，涉及质量保证、产品一致性和抽样检测。","eventTime":"2026-10-08 11:51","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"36氪","url":"https://www.36kr.com/newsflashes/4016693089063049"}},
+{"id":"china-laos-power","section":"中国经济","title":"中老联网累计送电破10亿千瓦时","summary":"据36氪转述，该500千伏跨境交流联网工程累计送电量突破10亿千瓦时。","eventTime":"2026-10-08 11:45","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"36氪","url":"https://www.36kr.com/newsflashes/4016675682602887"}},
+{"id":"ai-model-updates","section":"科技／AI","title":"多家AI模型产品更新被媒体汇总报道","summary":"据钛媒体报道，OpenAI与Anthropic假期期间有模型与定价更新；具体能力和价格仍须回到厂商公告复核。","eventTime":"2026-10-08","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"钛媒体","url":"https://www.tmtpost.com/8160689.html"}},
+{"id":"manus-funding","section":"科技／AI","title":"Manus据报道完成超5亿美元融资","summary":"华尔街见闻报道称 Manus 完成新一轮融资，金额超过5亿美元；未见本轮原始融资公告。","eventTime":"2026-10-08 12:08","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"华尔街见闻","url":"https://wallstreetcn.com/livenews/3175164"}},
+{"id":"samsung-ai-chip","section":"科技／AI","title":"三星AI芯片需求带动利润创高","summary":"据 BBC 报道，AI芯片热潮推动三星利润创纪录；详细业绩数字应以公司披露为准。","eventTime":"2026-10-08 09:59","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"BBC","url":"https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss"}},
+{"id":"canada-maid","section":"国际政治","title":"加拿大停止推进精神疾病单独适用的协助死亡计划","summary":"据纽约时报报道，加拿大不再推进仅因精神疾病而适用医疗协助死亡的计划。","eventTime":"2026-10-07","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"New York Times","url":"https://www.nytimes.com/2026/10/07/world/canada/canada-medically-assisted-death-mental-illness.html"}},
+{"id":"france-uk-eu","section":"国际政治","title":"法国财长谈英国与欧盟关系","summary":"据 BBC 报道，法国财长称加入欧盟有助于成员国应对共同挑战。","eventTime":"2026-10-08 12:02","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"BBC","url":"https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&at_campaign=rss"}},
+{"id":"seven-eleven-india","section":"国际经济","title":"7-Eleven关闭印度全部门店","summary":"据经济观察网转述公司声明与日媒信息，信实零售于9月30日关闭印度门店。","eventTime":"2026-10-06（据报道）","updatedAt":"2026-10-08T12:30:00+08:00","source":{"name":"经济观察网","url":"https://www.eeo.com.cn/2026/1008/1057344.shtml"}}
+]}
