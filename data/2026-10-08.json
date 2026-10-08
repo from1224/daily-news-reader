@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "updatedAt": "2026-10-08T12:14:00+08:00",
+  "items": [
+    {
+      "id": "fomc-minutes-2026-09-15-16",
+      "section": "宏观市场",
+      "title": "美联储发布 9 月会议纪要",
+      "summary": "美联储于 10 月 7 日发布 9 月 15–16 日 FOMC 会议纪要；该条仅确认纪要已发布，具体政策解读须回到原文核对。",
+      "eventTime": "2026-10-07 14:00 ET（官方发布）",
+      "updatedAt": "2026-10-08T12:14:00+08:00",
+      "source": {
+        "name": "Federal Reserve",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm"
+      }
+    }
+  ]
+}
